@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  font-family: "Londrina Shadow";
+}
+#main_container {
+  background-color: #c1e6e5;
+  margin: 30px;
+  /* height: 100vh;
+  width: 100vh; */
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+#title {
+  font-size: 45px;
+  font-weight: 600;
+  align-self: center;
+  padding: 15px;
+}
+#instructions {
+  border: 1px solid black;
+  margin-top: 30px;
+}
+#lets_play {
+  height: 100px;
+  width: 200px;
+}
+#select_game_icons img {
+  height: 250px;
+  width: 250px;
+  display: block;
+}
+#select_game_icons button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+.style1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #3e737a;
+}
+.style2 {
+  font-size: 45px;
+  font-weight: 600;
+  /* color: #3e737a; */
+}
+#note {
+  border: 2px solid white;
+  align-self: center;
+}
+#animate_click {
+  animation: shake 3s infinite ease-in;
+}
+
+/* Keyframes for shake animation */
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  15%,
+  45%,
+  75% {
+    transform: translateY(-3px);
+  }
+  30%,
+  60%,
+  85% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animation on click */
+.highlight {
+  border: 2px solid #3e737a; /* Example of border highlight */
+  box-shadow: 0 0 15px #3e737a; /* Example of shadow highlight */
+  transition: all 0.3s ease; /* Smooth transition for the highlight */
+}
+#result_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cracker_img {
+  height: 80px;
+  width: 80px;
+  animation: shake 1s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

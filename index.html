@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock,Paper&Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="main_container">
+      <img
+        id="lets_play"
+        src="images/lets_play_icon.png"
+        alt="Image stating lets play"
+      />
+      <p id="title">Rock, Paper And Scissors</p>
+      <p id="animate_click" class="style1">
+        Click on any one of the following icons below to play!
+      </p>
+      <div id="select_game_icons">
+        <button>
+          <img
+            src="images/rock_icon.png"
+            id="Rock"
+            onclick="findWinner('Rock')"
+            alt="Image of the Rock icon"
+          />
+        </button>
+        <button>
+          <img
+            src="images/paper_icon.png"
+            id="Paper"
+            onclick="findWinner('Paper')"
+            alt="Image of the Paper icon"
+          />
+        </button>
+        <button>
+          <img
+            src="images/scissor_icon.png"
+            id="Scissors"
+            onclick="findWinner('Scissors')"
+            alt="Image of the Scissors icon"
+          />
+        </button>
+      </div>
+      <p class="style1" id="user_selected">You selected&nbsp; :</p>
+      <p class="style1" id="computer_selected">Computer selected&nbsp; :</p>
+      <div id="result_box">
+        <h3 class="style2" id="result_display">&nbsp;</h3>
+      </div>
+
+      <p class="style1" id="score_display">
+        Your score&nbsp; : &nbsp; 0 Computer score&nbsp; : &nbsp; 0
+      </p>
+    </section>
+  </body>
+</html>
